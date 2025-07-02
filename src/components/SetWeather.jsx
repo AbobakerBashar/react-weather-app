@@ -4,12 +4,6 @@ import { faSearch, faXmark, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 import clsx from 'clsx'
 
-
-// axios(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`)
-// .then(res=>console.log(res))
-
-
-
 export default function SetWeather(probs) {
 
   const [isLoading, setIsLoading] = useState(false)
