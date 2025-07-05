@@ -12,7 +12,7 @@ export default function SetWeather(probs) {
     if (!city || isLoading) return
     setIsLoading(true)
     try {
-      const API_KEY ="05c6d450e64ce7f0aca1e0f5bea5a0c6"
+      const API_KEY = import.meta.env.VITE_API_KEY
       const endpoin = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
       const response = await axios(endpoin)
       const data = await response.data
